@@ -64,7 +64,6 @@ defmodule WebKontistWeb.DashboardLive do
     %{token: token, current_account: account_id} = socket.assigns
     {:ok, transactions} = Exkontist.Client.account_transactions(account_id, token)
     socket = assign(socket, transactions: transactions)
-    IO.inspect(transactions)
     {:noreply, socket}
   end
 
