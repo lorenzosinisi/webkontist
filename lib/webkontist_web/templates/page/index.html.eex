@@ -1,0 +1,7 @@
+<section class="phx-hero">
+  <h1><%= gettext "Welcome to %{name}!", name: "WebKontist" %></h1>
+</section>
+
+<section class="row">
+  <article class="column">
+</article>
